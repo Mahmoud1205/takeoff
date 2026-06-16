@@ -20,6 +20,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Takeoff",
   description: "An aviation-themed YSWS.",
+  icons: {
+    icon: "/TakeoffLogo.png",
+  },
 };
 
 export default function RootLayout({
