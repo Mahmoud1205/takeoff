@@ -36,7 +36,7 @@ export default function Home() {
         <Button
           variant="outline"
           size="lg"
-          onClick={() => window.open("https://google.com/", "_blank", "noopener,noreferrer")} // TODO: not ideal. fix. refer to shadcn docs for Button
+          onClick={() => window.open("https://rsvp.hackclub.community/takeoff", "_blank", "noopener,noreferrer")} // TODO: not ideal. fix. refer to shadcn docs for Button
         >
           RSVP
         </Button>
