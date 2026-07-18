@@ -45,6 +45,21 @@
     color: #ffffff;
 }
 
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #020617; 
+    background-image: linear-gradient(rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.35)), url('TAKEOFFBG.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
 
 .FAQ {
       position: relative;
@@ -56,13 +71,12 @@
 .FAQstyle {
     border: #00bdff;
     overflow: hidden;
-
 }
 
 
 .FAQlist {
     color: aqua;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid rgba(0, 187, 255, 0.288);
     font-size: 19px;
     font-size: 19px;
     padding: 12px 20px;
@@ -78,22 +92,28 @@
 }
 
 .FAQcontent {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  padding: 10px 20px;
-  color: white;
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+        grid-template-rows .35s ease,
+        opacity .25s ease,
+        transform .25s ease;
+
   
+}
+
+.FAQcontent > div {
+    overflow: hidden;
 }
 
 .FAQstyle[open] .FAQcontent {
   opacity: 1;
   transform: translateY(0);
-}
+      grid-template-rows: 1fr;
 
-.FAQ.active .FAQcontent {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
 }
 
