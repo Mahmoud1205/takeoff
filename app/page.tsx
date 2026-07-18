@@ -58,11 +58,15 @@ export default function Home() {
             <br /><h1 className="text-3xl font-bold mb-6 text-center">FAQ</h1>
         <details className={styles.FAQstyle}>
             <summary className={styles.FAQlist}>what is this?</summary>
-            <p className={styles.FAQcontent}>This is....</p>
+            <p className={styles.FAQcontent}>A YSWS where you ship aviation-related hardware and/or software projects (drones, hobby radars, flight trackers, aviation games, etc.), and we ship aviation-related prizes and funding for your hardware projects!
+
+</p>
   </details>
           <details className={styles.FAQstyle}>
             <summary className={styles.FAQlist}>Is this legit?</summary>
-            <p className={styles.FAQcontent}>This is a hackclub program.....</p>
+            <p className={styles.FAQcontent}>Hack Club is the world's largest community of teenage makers, and a 501(c)(3) nonprofit. Hack Club is supported by donations from tech companies like GitHub and individuals like Michael Dell. Hack Club is fiscally transparent.
+
+</p>
         </details>
 </div>
 
