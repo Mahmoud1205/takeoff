@@ -67,6 +67,17 @@ export default function Home() {
 
 </p>
         </details>
+
+          <details className={styles.FAQstyle}>
+            <summary className={styles.FAQlist}>I dont know any hardware or software!</summary>
+            <p className={styles.FAQcontent}>Don't worry! Takeoff is beginner friendly, we have some starter projects for you to start learning skills!</p>
+        </details>
+
+          <details className={styles.FAQstyle}>
+            <summary className={styles.FAQlist}>Who is eligible?</summary>
+            <p className={styles.FAQcontent}>To be eligible for Takeoff, you must be between the ages of 13 and 18 (inclusive).</p>
+        </details>
+
 </div>
 
       </div>
