@@ -8,12 +8,24 @@
  */
 
 "use client"
-
+import styles from "./page.module.css";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-slate-950 text-white">
+
+
+      <header className={styles.header}>
+        <div className={styles.navbar}>
+          <a href="">TAKEOFF</a>
+          <a href=""  className={styles.navbarButtons}>About</a>
+
+        </div>
+
+      </header>
+
+
       <div className="max-w-xl text-center px-6">
         <p className="text-sky-400 text-xl font-medium tracking-widest uppercase">
           Takeoff
@@ -36,10 +48,24 @@ export default function Home() {
         <Button
           variant="outline"
           size="lg"
+          className="mt-6 mb-12"
           onClick={() => window.open("https://rsvp.hackclub.community/takeoff", "_blank", "noopener,noreferrer")} // TODO: not ideal. fix. refer to shadcn docs for Button
         >
           RSVP
         </Button>
+
+<div className={styles.FAQ}>
+            <br /><h1 className="text-3xl font-bold mb-6 text-center">FAQ</h1>
+        <details className={styles.FAQstyle}>
+            <summary className={styles.FAQlist}>what is this?</summary>
+            <p className={styles.FAQcontent}>This is....</p>
+  </details>
+          <details className={styles.FAQstyle}>
+            <summary className={styles.FAQlist}>Is this legit?</summary>
+            <p className={styles.FAQcontent}>This is a hackclub program.....</p>
+        </details>
+</div>
+
       </div>
     </main>
   );

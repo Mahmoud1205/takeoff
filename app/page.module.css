@@ -1,0 +1,99 @@
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding-top: 15px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+      color: #00bdff;
+      width: 100%;
+      margin-left: 12px;
+      margin-right: 12px;
+      align-items: center;
+       background: rgba(15, 23, 42, 0.45); 
+    backdrop-filter: blur(14px);        
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 12px 24px;
+}
+
+.navbar:hover {
+      border-color: rgba(56, 189, 248, 0.25); 
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(56, 189, 248, 0.05);
+}
+
+.navbarButtons {
+    color: aquamarine;    
+}
+
+.navbarButtons:hover {
+    color: #ffffff;
+}
+
+
+.FAQ {
+      position: relative;
+  display: inline-block;
+  width: 100%;
+  gap: 12px;
+}
+
+.FAQstyle {
+    border: #00bdff;
+    overflow: hidden;
+
+}
+
+
+.FAQlist {
+    color: aqua;
+    border-bottom: 2px solid;
+    font-size: 19px;
+    font-size: 19px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    list-style: none; 
+
+}
+
+.FAQlist:hover {
+    background-color: rgb(116, 116, 153, 0.1);
+    height: auto;
+}
+
+.FAQcontent {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 10px 20px;
+  color: white;
+  
+}
+
+.FAQstyle[open] .FAQcontent {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.FAQ.active .FAQcontent {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
