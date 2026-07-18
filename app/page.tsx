@@ -8,6 +8,7 @@
  */
 
 "use client"
+import { useAutomove } from './useAutomove';
 import styles from "./page.module.css";
 import { Button } from "@/components/ui/button";
 
@@ -52,6 +53,58 @@ export default function Home() {
         >
           RSVP
         </Button>
+              </div>
+
+
+<section className={styles.showcaseSection}>
+  <h2 className={styles.showcaseHeading}>[Previous submissions]</h2>
+
+    <div className={styles.cardStream}>
+  <div className={styles.blueprintCard} style={{ backgroundImage: "url('/RC-plane.webp')"}}>
+      <div className={styles.cardTitle}>RC PLANE</div>
+      <div className={styles.cardCreator}>By Hydrance</div>
+      <div className={styles.cardDescription}>a 3d printed RC plane from scratch. Using lightweight PLA, brushless motors, flight controller, ESC, transmitter, receiver, GPS, and some servos.</div>
+    </div>
+
+    <div className={styles.blueprintCard} style={{ backgroundImage: "url('/flight-sensor.webp')"}}>
+      <div className={styles.cardTitle}>Flightsensor</div>
+      <div className={styles.cardCreator}>By Limitens</div>
+      <div className={styles.cardDescription}>A Keychain flight sensor that can track the closest planes to the user using public flight data.</div>
+    </div>
+
+
+    <div className={styles.blueprintCard} style={{ backgroundImage: "url('/drone-pcb.webp')" }}>
+      <div className={styles.cardTitle}>Drone controller module</div>
+      <div className={styles.cardCreator}>By Abohisham</div>
+      <div className={styles.cardDescription}>A controller used to control a drone with 4 motors, plus an IMU controller to determine position of drone and orientation.</div>
+    </div>
+
+
+    <div className={styles.blueprintCard} style={{ backgroundImage: "url('/rocket-flight-controller.webp')" }}>
+      <div className={styles.cardTitle}>Rocket flight controller</div>
+      <div className={styles.cardCreator}>By dash.pt101</div>
+      <div className={styles.cardDescription}>Rocket Flight Controller, designed with TVC and Active Control, while allowing estimates for e.g speeds in flight controls.</div>
+    </div>
+
+    <div className={styles.blueprintCard} style={{ backgroundImage: "url('/Desktop-jet-engine.webp')" }}>
+      <div className={styles.cardTitle}>Desktop Jet engine</div>
+      <div className={styles.cardCreator}>By Ryan</div>
+      <div className={styles.cardDescription}>A miniature turbojet replica powered by a dc motor</div>
+    </div>
+
+    <div className={styles.blueprintCard} style={{ backgroundImage: "url('/Hover.webp')" }}>
+      <div className={styles.cardTitle}>Hover</div>
+      <div className={styles.cardCreator}>By Shauryac</div>
+      <div className={styles.cardDescription}>A fully custom mini racing/stunt drone with ML-assisted balancing, automatic stunts, and some level of autonomous operation.</div>
+    </div>
+
+    <div className={styles.blueprintCard} style={{ backgroundImage: "url('/RC-transmitter.jpg')" }}>
+      <div className={styles.cardTitle}>RC-transmitter</div>
+      <div className={styles.cardCreator}>By Yarne</div>
+      <div className={styles.cardDescription}>A 2.4GHz transmitter for controlling drones, planes, cars. Based around the RP2040 and nRF24.</div>
+    </div>
+  </div>
+</section>
 
 <div className={styles.FAQ}>
             <br /><h1 className="text-3xl font-bold mb-6 text-center">FAQ</h1>
@@ -77,10 +130,13 @@ export default function Home() {
             <summary className={styles.FAQlist}>Who is eligible?</summary>
             <p className={styles.FAQcontent}>To be eligible for Takeoff, you must be between the ages of 13 and 18 (inclusive).</p>
         </details>
+              <details className={styles.FAQstyle}>
+            <summary className={styles.FAQlist}>I have more questions!</summary>
+            <p className={styles.FAQcontent}>Ask in #takeoff-help on the Hack Club Slack</p>
+        </details>
 
 </div>
 
-      </div>
     </main>
   );
 }
