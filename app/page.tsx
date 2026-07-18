@@ -13,8 +13,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className={`${styles.mainContainer} h-screen w-screen overflow-x-hidden flex flex-col items-center justify-center text-white relative`}>
-
+<main className={`${styles.mainContainer} w-screen overflow-x-hidden flex flex-col items-center text-white relative`}>
+  
       <header className={styles.header}>
         <div className={styles.navbar}>
           <a href="">TAKEOFF</a>
