@@ -18,12 +18,15 @@
       margin-left: 12px;
       margin-right: 12px;
       align-items: center;
-       background: rgba(15, 23, 42, 0.45); 
-    backdrop-filter: blur(14px);        
-    -webkit-backdrop-filter: blur(14px);
+background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.12) 0%, 
+        rgba(15, 23, 42, 0.65) 40%, 
+        rgba(2, 6, 23, 0.85) 100%);
+    backdrop-filter: blur(40px);
+-webkit-backdrop-filter: blur(40px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: space-between;
     max-width: 1200px;
@@ -50,15 +53,14 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #020617; 
+background: rgba(15, 23, 42, 0.35);
     background-image: linear-gradient(rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.35)), url('TAKEOFFBG.png');
     background-size: cover;
+    z-index: 1;
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
 }
-
-
 
 
 .FAQ {
